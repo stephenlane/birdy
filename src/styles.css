@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*@import url("./css/omega/theme.css");*/
+@import url("./resources/primeng.min.css");
+@import url("./resources/bootstrap/theme.css");
+body {
+  background-color: #f8f8f8;
+  height:100%;
+  width:100%;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 -25px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 1s linear infinite;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #555;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.main{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+
+
+
+.stephen {
+  -webkit-animation: seconds 1.0s forwards;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 10s;
+  animation: seconds 1.0s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 10s;
+  position: relative;
+}
+@-webkit-keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px;
+  }
+}
+@keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px;
+  }
+}
